@@ -1,0 +1,1 @@
+# ansatt-adapter-bluegarden
