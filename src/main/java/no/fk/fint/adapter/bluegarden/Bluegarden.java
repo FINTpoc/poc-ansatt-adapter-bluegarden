@@ -23,32 +23,36 @@ public class Bluegarden {
             throw new RuntimeException();
         }
 
-        Ansatt ole = new Ansatt(new Personnavn("Ole", "Olsen"), Kjonn.MANN, Landkode.NO, fodselsdato, Sivilstand.ENKE_ELLER_ENKEMANN);
-        ole.addIdentifikator(new Identifikator("fodselsnummer", "12345678901"));
-        ole.setKontaktinformasjon(new Kontaktinformasjon("ole.olsen@gmail.com", "90909090", "90909090"));
-        ole.setAvdeling("IKT avdelingen");
-        employees.put(ole.getIdentifikatorer().get(0), ole);
+        Ansatt gunnar = new Ansatt(new Personnavn("Gunnar", "Olsen"), Kjonn.MANN, Landkode.NO, fodselsdato, Sivilstand.ENKE_ELLER_ENKEMANN);
+        gunnar.addIdentifikator(new Identifikator("fodselsnummer", "12345678901"));
+        gunnar.setKontaktinformasjon(new Kontaktinformasjon("gunnar.olsen@hfk.no", "90909090", "90909090"));
+        gunnar.setAvdeling("IKT avdelingen");
+        employees.put(gunnar.getIdentifikatorer().get(0), gunnar);
 
-        Ansatt mari = new Ansatt(new Personnavn("Mari", "Hansen"), Kjonn.KVINNE, Landkode.NO, fodselsdato, Sivilstand.GIFT);
-        mari.addIdentifikator(new Identifikator("ansattnummer", "123"));
-        mari.setAvdeling("Personalavdelingen");
-        employees.put(mari.getIdentifikatorer().get(0), mari);
+        Ansatt emma = new Ansatt(new Personnavn("Emma", "Hansen"), Kjonn.KVINNE, Landkode.NO, fodselsdato, Sivilstand.GIFT);
+        emma.addIdentifikator(new Identifikator("ansattnummer", "123"));
+        emma.setKontaktinformasjon(new Kontaktinformasjon("emma.hansen@hfk.no", "91919191", "91919191"));
+        emma.setAvdeling("Personalavdelingen");
+        employees.put(emma.getIdentifikatorer().get(0), emma);
 
-        Ansatt trine = new Ansatt(new Personnavn("Trine", "Johansen"), Kjonn.KVINNE, Landkode.SE, fodselsdato, Sivilstand.GJENLEVENDE_PARTNER);
-        trine.addIdentifikator(new Identifikator("fodselsnummer", "23456789012"));
-        trine.setAvdeling("Skeisvang videregående skole");
-        employees.put(trine.getIdentifikatorer().get(0), trine);
+        Ansatt nora = new Ansatt(new Personnavn("Nora", "Johansen"), Kjonn.KVINNE, Landkode.SE, fodselsdato, Sivilstand.GJENLEVENDE_PARTNER);
+        nora.addIdentifikator(new Identifikator("fodselsnummer", "23456789012"));
+        nora.setKontaktinformasjon(new Kontaktinformasjon("nora.johansen@hfk.no", "92929292", "92929292"));
+        nora.setAvdeling("Skeisvang videregående skole");
+        employees.put(nora.getIdentifikatorer().get(0), nora);
 
-        Ansatt line = new Ansatt(new Personnavn("Line", "Svendsen"), Kjonn.KVINNE, Landkode.NO, fodselsdato, Sivilstand.SKILT);
+        Ansatt line = new Ansatt(new Personnavn("Line", "Haraldseth"), Kjonn.KVINNE, Landkode.NO, fodselsdato, Sivilstand.SKILT);
         line.addIdentifikator(new Identifikator("fodselsnummer", "34567890123"));
+        line.setKontaktinformasjon(new Kontaktinformasjon("line.haraldseth@hfk.no", "93939393", "93939393"));
         line.setAvdeling("Seksjon for kvalitet, analyse og dimensjonering");
         employees.put(line.getIdentifikatorer().get(0), line);
 
-        Ansatt pal = new Ansatt(new Personnavn("Pål", "Persen"), Kjonn.MANN, Landkode.NO, fodselsdato, Sivilstand.GIFT);
-        pal.setAvdeling("Rådmannens stab");
-        pal.setKontaktinformasjon(new Kontaktinformasjon("pal.persen@online.no", "123456789", "123456789"));
-        pal.addIdentifikator(new Identifikator("fodselsnummer", "45678901234"));
-        employees.put(pal.getIdentifikatorer().get(0), pal);
+        Ansatt aksel = new Ansatt(new Personnavn("Aksel", "Minde"), Kjonn.MANN, Landkode.NO, fodselsdato, Sivilstand.GIFT);
+        aksel.setAvdeling("Rådmannens stab");
+        aksel.setKontaktinformasjon(new Kontaktinformasjon("aksel.minde@hfk.no", "123456789", "123456789"));
+        aksel.setKontaktinformasjon(new Kontaktinformasjon("aksel.minde@hfk.no", "94949494", "94949494"));
+        aksel.addIdentifikator(new Identifikator("fodselsnummer", "45678901234"));
+        employees.put(aksel.getIdentifikatorer().get(0), aksel);
 
     }
 
