@@ -23,17 +23,17 @@ public class Bluegarden {
             throw new RuntimeException();
         }
 
-        Ansatt gunnar = new Ansatt(new Personnavn("Gunnar", "Olsen"), Kjonn.MANN, Landkode.NO, fodselsdato, Sivilstand.ENKE_ELLER_ENKEMANN);
-        gunnar.addIdentifikator(new Identifikator("fodselsnummer", "12345678901"));
-        gunnar.setKontaktinformasjon(new Kontaktinformasjon("gunnar.olsen@hfk.no", "90909090", "90909090"));
-        gunnar.setAvdeling("IKT avdelingen");
-        employees.put(gunnar.getIdentifikatorer().get(0), gunnar);
+        Ansatt nils = new Ansatt(new Personnavn("Nils", "Olsen"), Kjonn.MANN, Landkode.NO, fodselsdato, Sivilstand.ENKE_ELLER_ENKEMANN);
+        nils.addIdentifikator(new Identifikator("fodselsnummer", "12345678901"));
+        nils.setKontaktinformasjon(new Kontaktinformasjon("nils.olsen@hfk.no", "90909090", "90909090"));
+        nils.setAvdeling("IKT avdelingen");
+        employees.put(nils.getIdentifikatorer().get(0), nils);
 
-        Ansatt emma = new Ansatt(new Personnavn("Emma", "Hansen"), Kjonn.KVINNE, Landkode.NO, fodselsdato, Sivilstand.GIFT);
-        emma.addIdentifikator(new Identifikator("ansattnummer", "123"));
-        emma.setKontaktinformasjon(new Kontaktinformasjon("emma.hansen@hfk.no", "91919191", "91919191"));
-        emma.setAvdeling("Personalavdelingen");
-        employees.put(emma.getIdentifikatorer().get(0), emma);
+        Ansatt elisabeth = new Ansatt(new Personnavn("Elisabeth", "Hansen"), Kjonn.KVINNE, Landkode.NO, fodselsdato, Sivilstand.GIFT);
+        elisabeth.addIdentifikator(new Identifikator("ansattnummer", "123"));
+        elisabeth.setKontaktinformasjon(new Kontaktinformasjon("elisabeth.hansen@hfk.no", "91919191", "91919191"));
+        elisabeth.setAvdeling("Personalavdelingen");
+        employees.put(elisabeth.getIdentifikatorer().get(0), elisabeth);
 
         Ansatt nora = new Ansatt(new Personnavn("Nora", "Johansen"), Kjonn.KVINNE, Landkode.SE, fodselsdato, Sivilstand.GJENLEVENDE_PARTNER);
         nora.addIdentifikator(new Identifikator("fodselsnummer", "23456789012"));
@@ -47,12 +47,12 @@ public class Bluegarden {
         line.setAvdeling("Seksjon for kvalitet, analyse og dimensjonering");
         employees.put(line.getIdentifikatorer().get(0), line);
 
-        Ansatt aksel = new Ansatt(new Personnavn("Aksel", "Minde"), Kjonn.MANN, Landkode.NO, fodselsdato, Sivilstand.GIFT);
-        aksel.setAvdeling("Rådmannens stab");
-        aksel.setKontaktinformasjon(new Kontaktinformasjon("aksel.minde@hfk.no", "123456789", "123456789"));
-        aksel.setKontaktinformasjon(new Kontaktinformasjon("aksel.minde@hfk.no", "94949494", "94949494"));
-        aksel.addIdentifikator(new Identifikator("fodselsnummer", "45678901234"));
-        employees.put(aksel.getIdentifikatorer().get(0), aksel);
+        Ansatt trygve = new Ansatt(new Personnavn("Trygve", "Minde"), Kjonn.MANN, Landkode.NO, fodselsdato, Sivilstand.GIFT);
+        trygve.setAvdeling("Rådmannens stab");
+        trygve.setKontaktinformasjon(new Kontaktinformasjon("trygve.minde@hfk.no", "123456789", "123456789"));
+        trygve.setKontaktinformasjon(new Kontaktinformasjon("trygve.minde@gmail.no", "94949494", "94949494"));
+        trygve.addIdentifikator(new Identifikator("fodselsnummer", "45678901234"));
+        employees.put(trygve.getIdentifikatorer().get(0), trygve);
 
     }
 
